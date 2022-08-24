@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import logo from '../assets/images/logo.svg'
+import link from '../assets/images/nav-icon1.svg'
+import face from '../assets/images/nav-icon2.svg'
+import insta from '../assets/images/nav-icon3.svg'
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -22,9 +26,9 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className={scrolled ? "scrolled navbar navbar-expand-lg bg-light" : "navbar navbar-expand-lg bg-light"}>
+      <nav className={scrolled ? "scrolled navbar navbar-expand-lg bg-light" : "navbar navbar-expand-lg navbar-dark bg-dark"}>
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <img src={logo} alt='logo' className='mx-5'/>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -36,7 +40,7 @@ const Navbar = () => {
                   aria-current="page" 
                   href="#home"
                   onClick={() => onUpdateActiveLink('home')}
-                  >Home
+                  > Home
                 </a>
               </li>
               <li className="nav-item">
@@ -44,7 +48,7 @@ const Navbar = () => {
                   className={activeLink === 'skills' ? "nav-link active" : "nav-link"}  
                   href="#skills"
                   onClick={() => onUpdateActiveLink('skills')}
-                  >Skills
+                  > Skills
                 </a>
               </li>
               <li className="nav-item">
@@ -56,6 +60,13 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+            <span className='navbar-text'>
+              <div className='social-icon'>
+                <a href='#'><img src={link} alt='linkedIn' className='mx-2'/></a>
+                <a href='#'><img src={face} alt='Facebook' className='mx-2'/></a>
+                <a href='#'><img src={insta} alt='Instagram' className='mx-2'/></a>
+              </div>
+            </span>
           </div>
         </div>
       </nav>
