@@ -60,13 +60,14 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <span className='navbar-text'>
-              <div className='social-icon'>
+            <span className='navbar-text mx-5 mb-1'>
+              <div className='social-icon '>
                 <a href='#'><img src={link} alt='linkedIn' className='mx-2'/></a>
                 <a href='#'><img src={face} alt='Facebook' className='mx-2'/></a>
                 <a href='#'><img src={insta} alt='Instagram' className='mx-2'/></a>
               </div>
             </span>
+            <button type="button" class="btn btn-outline-light">Light</button>
           </div>
         </div>
       </nav>
