@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import headerImg from '../assets/images/header-img.svg'
 import {ArrowRightCircle} from 'react-bootstrap-icons'
+import Accordion from './accordion';
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -38,7 +39,7 @@ const Banner = () => {
       setIsDeleting(false)
       setLoopNum(loopNum + 1);
       setIndex(1)
-      setDelta(500);
+      setDelta(300);
     } else {
         setIndex(prevIndex => prevIndex + 1);
       }
@@ -50,9 +51,14 @@ const Banner = () => {
         <div className='row mx-auto'>
           <div className='col col-xs-12 col-md-6 col-xl-7'>
             <span className='tagline'>Welcome to my Portfolio</span>
-            <h1>{'Hi! i am a webdecoded'}<span className='wrap'>{text}</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid mollitia neque sint. A iste excepturi tenetur officiis porro, dignissimos qui ratione doloribus, placeat ducimus reiciendis ipsum, consequatur sit quas amet!</p>
+            <h1 className='animated-title'>{'Hi! i am a webdecoded'}<span className='wrap'>{text}</span></h1>
+            <p> 
+              My name is Julio Samaniego, I look at my self as a creative, problem solver, team player and responsible
+              individual, at work I am a Frontend Developer who domains Javascript and React, in less manner Typescript and
+              Next JS and has worked with Redux for state management. 
+            </p>
             <button className="btn btn-outline-light px-4 py-3">Let's connect <ArrowRightCircle size={25} className="mx-2"/></button>
+            <Accordion/>
           </div>
           <div className='col col-xs-12 col-md-6 col-xl-5'>
             <img src={headerImg} alt='Header Image'/>
