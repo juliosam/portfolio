@@ -3,6 +3,7 @@ import logo from '../assets/images/logo.svg'
 import link from '../assets/images/nav-icon1.svg'
 import face from '../assets/images/nav-icon2.svg'
 import insta from '../assets/images/nav-icon3.svg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -35,29 +36,32 @@ const Navbar = () => {
           <div className="collapse navbar-collapse text-end" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a 
+                <Link 
+                  to='./'
                   className={activeLink === 'home' ? "nav-link active" : "nav-link"} 
                   aria-current="page" 
                   href="#home"
                   onClick={() => onUpdateActiveLink('home')}
                   > Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
+                  to ='./skills'
                   className={activeLink === 'skills' ? "nav-link active" : "nav-link"}  
                   href="#skills"
                   onClick={() => onUpdateActiveLink('skills')}
                   > Skills
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a 
+                <Link 
+                  to='./projects'
                   className={activeLink === 'projects' ? "nav-link active" : "nav-link"} 
                   href="#projects"
                   onClick={() => onUpdateActiveLink('projects')}
                   >Projects
-                </a>
+                </Link>
               </li>
             </ul>
             <span className='navbar-text mx-5 mb-1'>
