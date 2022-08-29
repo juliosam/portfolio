@@ -13,7 +13,7 @@ const Accordion = () => {
           <div className="accordion-body">
             <strong>Civil Engineer from UANL.</strong> One of the 10 best universities in Mexico and one of the hardest careers in it. <code>. Why i switched to Tech?</code> I have
              personal and profetional reasons, in the profetional side is because Tech industry is healthier than construction, it takes better care of their workers and is less risky 
-             by nature. And in the personal side ...whell is kind of personal haha, but if you ask me i wont mind to explain
+             by nature. And in the personal side ...whell that is kind of personal haha, but if you ask me i wont mind to explain
           </div>
         </div>
       </div>

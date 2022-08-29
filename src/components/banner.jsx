@@ -62,7 +62,7 @@ const Banner = () => {
             <Accordion/>
           </div>
           <div className='col col-xs-12 col-md-6 col-xl-5'>
-            <img src={headerImg} alt='Header Image'/>
+            <img src={headerImg} alt='Header'/>
           </div>
         </div>
       </div>
