@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../assets/images/logo.svg'
+import logo from '../assets/images/JS-logo.png'
 import link from '../assets/images/nav-icon1.svg'
 import face from '../assets/images/nav-icon2.svg'
 import insta from '../assets/images/nav-icon3.svg'
@@ -26,14 +26,16 @@ const Navbar = () => {
   }
 
   return (
-    <div>
-      <nav className={scrolled ? "scrolled navbar navbar-expand-lg bg-light" : "navbar navbar-expand-lg navbar-dark bg-dark"}>
+      <nav className={scrolled ? "scrolled navbar navbar-expand-lg navo" : "navbar navbar-expand-lg navbar-dark bg-dark"}>
         <div className="container">
-          <img src={logo} alt='logo' className='mx-5'/>
+          <div className='logo-complete mx-5'>
+            <img src={logo} alt='logo' className='logo'/>
+            <button className='julioS'>Julio Samaniego</button>
+          </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse text-end" id="navbarNav">
+          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link 
@@ -66,16 +68,15 @@ const Navbar = () => {
             </ul>
             <span className='navbar-text mx-5 mb-1'>
               <div className='social-icon '>
-                <a href='#'><img src={link} alt='linkedIn' className='mx-2'/></a>
-                <a href='#'><img src={face} alt='Facebook' className='mx-2'/></a>
-                <a href='#'><img src={insta} alt='Instagram' className='mx-2'/></a>
+                <a href='https://www.linkedin.com/in/julio-samaniego-060101125/'><img src={link} alt='linkedIn' className='mx-2'/></a>
+                <a href='https://github.com/juliosam'><img src={face} alt='Facebook' className='mx-2'/></a>
+                <a href='https://github.com/juliosam'><img src={insta} alt='Instagram' className='mx-2'/></a>
               </div>
             </span>
             <button type="button" className="btn btn-outline-light">Let's connect</button>
           </div>
         </div>
       </nav>
-    </div>
   )
 }
 
