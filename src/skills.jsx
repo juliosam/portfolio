@@ -18,8 +18,8 @@ const allSkills = [
     id: 1,
     logo:RElogo,
     name: 'React.js',
-    level: 'Advanced',
-    percent: 80, 
+    level: 'Above medium',
+    percent: 78, 
   },
   {
     id: 2,
@@ -75,7 +75,7 @@ const allSkills = [
     logo:MUlogo,
     name: 'Material UI',
     level: 'Medium',
-    percent: 45, 
+    percent: 50, 
   },
   {
     id: 10,
@@ -103,7 +103,7 @@ const allSkills = [
 const Skills = () => {
   return (
     <div className='skills'>
-      <h1>This is my set of Skills</h1>
+      <h1 className='my-5'>This is my set of Skills</h1>
       <div className='skills-container'>
         {allSkills.map(skill => {
           return(

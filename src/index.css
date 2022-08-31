@@ -147,20 +147,50 @@ ul li {
 }
 
 .skills-container{
-  padding: 40px;
+  padding: 0px 40px 30px 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .skill-card{
-  padding: 40px 60px;
+  padding: 30px 30px;
   width: 280px;
+  border: 1px solid rgb(59, 59, 59);
+  margin: 30px 30px;
+  border-radius: 14px;
+}
+
+.skill-img-div{
+  margin-bottom: 20px;
 }
 
 .skill-img-div img{
   height: 60px;
+}
+
+.progres-bar-container{
+  border: none;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.progres-bar{
+  width: 80%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: rgba(58, 58, 255, 0.7) 0px 0px 4px 4px;
+  margin-left: 5px;
+}
+
+.cero-100{
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  margin-top: 6px;
 }
 
 @media (max-width: 1195px){
