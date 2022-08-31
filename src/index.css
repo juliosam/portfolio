@@ -146,6 +146,23 @@ ul li {
   height: 150px;
 }
 
+.skills-container{
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.skill-card{
+  padding: 40px 60px;
+  width: 280px;
+}
+
+.skill-img-div img{
+  height: 60px;
+}
+
 @media (max-width: 1195px){
 
   .animated-title{

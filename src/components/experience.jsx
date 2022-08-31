@@ -2,6 +2,7 @@ import WorkCard from "./workCard"
 
 const jobs = [
   {
+    id: 1,
     company: "Madai & Cad Cam Mty",
     description: "Scrum master for the development of two hybrid apps and an internal Software. Product Owner for the development of two web pages and a physical store",
     position: "Scrum Master",
@@ -10,6 +11,7 @@ const jobs = [
     page: "https://madai.mx/"
   },
   {
+    id: 2,
     company: "Promotora Merhen",
     description: "Collaborate with engineers and architects o determine project specifications. Negotiate contracts with external suppliers to reach advantageous agreements.",
     position: "Project Manager",
@@ -18,6 +20,7 @@ const jobs = [
     page: "http://www.pmerhen.com/"
   },
   {
+    id: 3,
     company: "Doctype LLC",
     description: "Component development with React JS. State management and Fetching with React Hooks. Implementation of Typescript with React. Consume of Rest API in the frontend.",
     position: "Frontend Developer",
@@ -34,7 +37,7 @@ const Experience = () => {
       <div className="d-flex justify-content-around flex-wrap mb-5">
         {
           jobs.map(job => {
-            return( <WorkCard job={job}/>)
+            return( <WorkCard job={job} key={job.id}/>)
           })
         }
       </div>
