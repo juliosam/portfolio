@@ -9,7 +9,7 @@ const ProjectCard = ({project}) => {
       </div>
       <ul className="list-group list-group-flush">
         <li className="list-group-item text-bg-dark"> Tech Stack: {project.techStack}</li>
-        <li className="list-group-item text-bg-dark">Design by: {project.design}</li>
+        <li className="list-group-item text-bg-dark">Designed by: {project.design}</li>
       </ul>
       <div className="card-body">
         <a href={project.github} className="card-link">{project.github}</a>

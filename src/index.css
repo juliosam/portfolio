@@ -88,8 +88,8 @@ ul li {
   padding-top: 8px;
 }
 
-.skills , .projects, .contact{
-  min-height: calc(100vh - 221px);
+.skills , .projects, .contact, .sended{
+  min-height: calc(100vh - 270px);
 }
 
 .animated-title{
@@ -156,7 +156,7 @@ ul li {
 }
 
 .skill-card{
-  padding: 30px 30px;
+  padding: 40px 30px;
   width: 280px;
   border: 1px solid rgb(59, 59, 59);
   margin: 30px 30px;
@@ -182,7 +182,7 @@ ul li {
   height: 3px;
   background-color: #fff;
   border-radius: 2px;
-  box-shadow: rgba(58, 58, 255, 0.7) 0px 0px 4px 4px;
+  box-shadow: rgba(58, 58, 255, 0.7) 0px 0px 4px 6px;
   margin-left: 5px;
 }
 
@@ -247,6 +247,14 @@ ul li {
  color: #fff;
 }
 
+.home-link{
+  color: rgb(32, 255, 236);
+}
+
+.home-link:hover{
+  color: rgb(13, 201, 214);
+}
+
 @media (max-width: 1195px){
 
   .animated-title{
@@ -260,6 +268,23 @@ ul li {
   .animated-title{
     min-height: 60px;
   }
+
+  .show{
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 20px 0;
+  }
+
+  .message-div{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+.contact input{
+  margin-right: 0px;
+}
 
 }
 

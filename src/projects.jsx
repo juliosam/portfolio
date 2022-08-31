@@ -20,7 +20,7 @@ const projects = [
     name: "Alsara Website",
     description: "Website for my wife's personal brand of fantasy jewelry retail. And for me, my first fullstack app using express for the backend",
     techStack: "React.js, Express.js, Apify, HTML, CSS",
-    design: "By me",
+    design: "Me",
     image: alsara,
     github: "https://github.com/juliosam/Alsara-react-bootst-express"
   },
@@ -38,7 +38,7 @@ const projects = [
     name: "Admon Soft",
     description: "Management App for a supply company includes Orders, Products and Users pages. Is my first fullstack attempt using Strapi for the backend",
     techStack: "NextJS, Typescript, MaterialUI, Strapi",
-    design: "By me",
+    design: "Me",
     image: admon,
     github: "https://github.com/juliosam/admin-nextJS-strapi-MUI"
   }
@@ -48,7 +48,7 @@ const projects = [
 const Projects = () => {
   return (
     <section>
-      <h2 className="mb-3">Favorite Projects</h2>
+      <h1 className="my-5">Favorite Projects</h1>
       <div className="d-flex justify-content-around flex-wrap mb-5">
         {
           projects.map(project => {
