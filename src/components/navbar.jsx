@@ -73,7 +73,9 @@ const Navbar = () => {
                 <a href='https://github.com/juliosam'><img src={insta} alt='Instagram' className='mx-2'/></a>
               </div>
             </span>
-            <button type="button" className="btn btn-outline-light">Let's connect</button>
+            <Link to='./contact'>
+              <button type="button" className="btn btn-outline-light">Let's connect</button>
+            </Link>
           </div>
         </div>
       </nav>

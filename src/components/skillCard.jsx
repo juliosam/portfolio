@@ -7,7 +7,7 @@ const SkillCard = ({skill}) => {
         <img src={skill.logo} alt={skill.name}/>
       </div>
       <div className='skill-nameAndLevel'>
-        <h4>{skill.name}</h4>
+        <h4 className='my-2'>{skill.name}</h4>
         <p>Level: {skill.level}</p>
       </div>
       <div className='progres-bar-container'>

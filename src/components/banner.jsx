@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import headerImg from '../assets/images/header-img.svg'
 import {ArrowRightCircle} from 'react-bootstrap-icons'
 import Accordion from './accordion';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -58,7 +59,9 @@ const Banner = () => {
               Next JS and has worked with Redux for state management. To style my apps I use Tailwind, Bootstrap, 
               Material UI and plain CSS.
             </p>
-            <button className="btn btn-outline-light px-4 py-3 my-3">Let's connect <ArrowRightCircle size={25} className="mx-2"/></button>
+            <Link to='./contact'>
+              <button className="btn btn-outline-light px-4 py-3 my-3">Let's connect <ArrowRightCircle size={25} className="mx-2"/></button>
+            </Link>
             <Accordion/>
           </div>
           <div className='col col-xs-12 col-md-6 col-xl-5'>
